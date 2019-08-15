@@ -31,6 +31,8 @@ public class CacheUtil {
             }
         } catch (Exception e){
             e.printStackTrace();
+        }finnaly{
+            jedis.close();
         }
         return result;
     }
@@ -52,6 +54,8 @@ public class CacheUtil {
             }
         } catch (Exception e) {
             e.printStackTrace();
+        } finnaly{
+            jedis.close();
         }
         return value;
     }
